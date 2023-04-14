@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import ProfileApp from './ProfileSearchApp';
+import ProfileSearchApp from './ProfileSearchApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ProfileApp />
+    <ProfileSearchApp />
   </React.StrictMode>
 );

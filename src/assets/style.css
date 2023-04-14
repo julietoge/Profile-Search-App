@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(250, 38, 250),
+    rgb(254, 106, 52),
+    rgb(255, 181, 45),
+    rgb(252, 193, 84)
+  );
+  background-repeat: no-repeat;
+  max-height: auto;
+  min-height: auto;
+}
+main {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 28px 0;
+}
+#searchContent{
+  width: 32%;
+  margin: 0 auto 24px;
+}
+#searchContent input {
+  padding: 12px 8px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  color: black;
+  width: 100%;
+  border-radius: 2px;
+  /* margin: 0 auto; */
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'Times New Roman', Times, serif;
+}
+#profileContainer{
+  width: 32%;
+  margin: 0 auto;
+}
+#profileContent {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  margin: 4px 0;
+  padding: 8px;
+  border-radius: 4px;
+}
+#userName {
+  margin-left: 1.5px;
+  color: #373535;
+}
+#userName div:nth-of-type(1) {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 10px;
+  font-weight: 400;
+}
+#userName div:nth-of-type(2) {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+@media screen and (max-width: 700px) {
+  #searchContent {
+   width: 80%;
+  }
+  #profileContainer {
+    width: 80%;
+  }
+}
