@@ -2,4 +2,4 @@
 
     ProfileSearchApp
         SearchBar
-        UserProfile
+        UserData
