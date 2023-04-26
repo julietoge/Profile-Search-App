@@ -7,26 +7,25 @@ const UserProfile = () => {
   const [searchInput, setSearchInput] = useState("");
 
   const usersItem = users.filter((user) => {
-
+// return user;
     if (searchInput === "") {
       return user;
-    } else if (
-      user.id.toLowerCase().includes(searchInput.toLowerCase())
-    ) {
-      return user;
-    } else if (
-      user.title.toLowerCase().includes(searchInput.toLowerCase())
-    ) {
-      return user;
-    } else if (
-      user.firstName.toLowerCase().includes(searchInput.toLowerCase())
-    ) {
-      return user;
-    } else if (
-      user.lastName.toLowerCase().includes(searchInput.toLowerCase())
-    ) {
-      return user;
-    }
+    } 
+    return user.title.match(searchInput)
+    // else if (
+    //   user.title.match(searchInput)
+    // ) {
+    //   return user;
+    // } else if (
+    //   user.firstName.match(searchInput)
+    // ) {
+    //   return user;
+    // } else if (
+    //   user.lastName.match(searchInput)
+    // ) {
+    //   return user;
+    // }
+    // // return users;
   });
 
   const peopleItems = usersItem.map((person) => {
@@ -66,6 +65,7 @@ const UserProfile = () => {
           id=""
           placeholder="Search by name"
           onChange={(event) => setSearchInput(event.target.value)}
+          value={searchInput}
         />
       </div>
 
