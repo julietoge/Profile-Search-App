@@ -7,25 +7,10 @@ const UserProfile = () => {
   const [searchInput, setSearchInput] = useState("");
 
   const usersItem = users.filter((user) => {
-// return user;
     if (searchInput === "") {
       return user;
     } 
     return user.id.match(searchInput);
-    // else if (
-    //   user.title.match(searchInput)
-    // ) {
-    //   return user;
-    // } else if (
-    //   user.firstName.match(searchInput)
-    // ) {
-    //   return user;
-    // } else if (
-    //   user.lastName.match(searchInput)
-    // ) {
-    //   return user;
-    // }
-    // // return users;
   });
 
   const peopleItems = usersItem.map((person) => {
