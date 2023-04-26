@@ -11,7 +11,7 @@ const UserProfile = () => {
     if (searchInput === "") {
       return user;
     } 
-    return user.title.match(searchInput)
+    return user.id.match(searchInput);
     // else if (
     //   user.title.match(searchInput)
     // ) {
