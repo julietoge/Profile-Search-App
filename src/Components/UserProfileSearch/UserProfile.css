@@ -1,0 +1,50 @@
+.user-profile-container {
+  width: 80%;
+  padding: 8px;
+  color: #665d5b;
+}
+.user-profile-container input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  font-weight: 400;
+  font-size: 14px;
+}
+.user-profile-container input::placeholder {
+  font-style: italic;
+}
+.user-profiles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.user-profile {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  border-radius: 2px;
+  background-color: #faf9f9;
+}
+.user-profile .avatar img {
+  width: 42px;
+  height: 42px;
+}
+.user-details {
+  margin-left: 10px;
+}
+.user-details div:nth-of-type(1) {
+  font-size: 10px;
+  font-weight: 400;
+}
+.user-details div:nth-of-type(2) {
+  font-size: 14px;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .user-profiles {
+    grid-template-columns: 1fr;
+  }
+}
