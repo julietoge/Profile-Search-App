@@ -1,4 +1,4 @@
-![](./src/assets/design/Assignment.pdf)
+![clickMe-for-readme](./src/assets/design/Assignment.pdf)
 # COMPONENTS
 
     ProfileSearchApp
