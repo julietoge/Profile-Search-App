@@ -1,4 +1,4 @@
-[](./src/assets/design/Assignment.pdf)
+[clivk ti view readme](./src/assets/design/Assignment.pdf)
 # COMPONENTS
 
     ProfileSearchApp
