@@ -1,4 +1,4 @@
-[clickme to view readme](./src/design/Assignment.pdf)
+![ClickMe](./src/design/Assignment.pdf)
 # COMPONENTS
 
     ProfileSearchApp
