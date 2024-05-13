@@ -1,10 +1,13 @@
+// Importation statements
 import { profiles } from "../UsersData";
 import { useState } from "react";
 import "./UserProfile.css";
 
+// Functional component definition of UserProfileSearch
 const UserProfileSearch = () => {
+  // State variable(searchTerm) and function(searchTerm) declaration
   const [searchTerm, setSearchTerm] = useState("");
-
+  // filtering of the profiles array based on the searchTerm state variable.
   const filteredProfiles = profiles.filter((profile) => {
     const fullName = `${profile.firstName} ${profile.lastName}`;
     if (searchTerm === "") {
@@ -12,7 +15,7 @@ const UserProfileSearch = () => {
     }
     return fullName.toLowerCase().includes(searchTerm.toLowerCase());
   });
-
+  // UserProfileSearch Component rendering
   return (
     <div className="user-profile-container">
       <input
@@ -42,5 +45,5 @@ const UserProfileSearch = () => {
     </div>
   );
 };
-
+// Default export of UserProfileSearch component 
 export default UserProfileSearch;
