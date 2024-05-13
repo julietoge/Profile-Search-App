@@ -45,5 +45,5 @@ const UserProfileSearch = () => {
     </div>
   );
 };
-// Default export of UserProfileSearch component 
+// Default export of UserProfileSearch component
 export default UserProfileSearch;
