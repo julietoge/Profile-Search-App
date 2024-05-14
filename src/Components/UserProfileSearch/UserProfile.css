@@ -1,50 +1,68 @@
+/* Styling for the user profile container */
 .user-profile-container {
-  width: 80%;
-  padding: 8px;
-  color: #665d5b;
+  width: 80%; /* Container width */
+  padding: 8px; /* Padding around the container */
+  color: #665d5b; /* Text color */
 }
+
+/* Styling for input fields inside the user profile container */
 .user-profile-container input {
-  width: 100%;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  outline: none;
-  border: none;
-  border-radius: 2px;
-  font-weight: 400;
-  font-size: 14px;
+  width: 100%; /* Input field width */
+  margin-bottom: 1rem; /* Spacing between input fields */
+  padding: 1rem; /* Padding inside the input field */
+  outline: none; /* Remove default outline */
+  border: none; /* Remove default border */
+  border-radius: 2px; /* Rounded corners */
+  font-weight: 400; /* Font weight */
+  font-size: 14px; /* Font size */
 }
+
+/* Styling for the placeholder text inside input fields */
 .user-profile-container input::placeholder {
-  font-style: italic;
+  font-style: italic; /* Italicize placeholder text */
 }
+
+/* Styling for the user profiles grid */
 .user-profiles {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  display: grid; /* Display as grid */
+  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+  gap: 1rem; /* Spacing between grid items */
 }
+
+/* Styling for each user profile */
 .user-profile {
-  display: flex;
-  flex-direction: row;
-  padding: 10px;
-  border-radius: 2px;
-  background-color: #faf9f9;
+  display: flex; /* Display as flexbox */
+  flex-direction: row; /* Align items in a row */
+  padding: 10px; /* Padding inside the profile */
+  border-radius: 2px; /* Rounded corners */
+  background-color: #faf9f9; /* Background color */
 }
+
+/* Styling for the avatar image inside a user profile */
 .user-profile .avatar img {
-  width: 42px;
-  height: 42px;
+  width: 42px; /* Avatar image width */
+  height: 42px; /* Avatar image height */
 }
+
+/* Styling for the user details section */
 .user-details {
-  margin-left: 10px;
+  margin-left: 10px; /* Left margin */
 }
+
+/* Styling for specific elements inside the user details section */
 .user-details div:nth-of-type(1) {
-  font-size: 10px;
-  font-weight: 400;
+  font-size: 10px; /* Font size for the first div */
+  font-weight: 400; /* Font weight for the first div */
 }
+
 .user-details div:nth-of-type(2) {
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 14px; /* Font size for the second div */
+  font-weight: 700; /* Font weight for the second div */
 }
+
+/* Media query for smaller screens */
 @media (max-width: 768px) {
   .user-profiles {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Single column layout on smaller screens */
   }
 }
